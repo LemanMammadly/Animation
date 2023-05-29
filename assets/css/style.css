@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.all .horror-before {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/img/0AF72550-A0AF-4524-9CF0-4ECB027461CE_4_5005_c.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+}
+.all .witch {
+  width: 600px;
+  height: 600px;
+  background-image: url(/assets/img/My\ project.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 300px;
+  left: -50%;
+  transform: translate(-50%, 0);
+  animation-name: witch;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 0.7, 0.3, 1);
+}
+@keyframes witch {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 130%;
+  }
+}/*# sourceMappingURL=style.css.map */
